@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: '比特雪球DCA'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F36476401F0B484C8F4992CC83573C14 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_429EA8CD4399431CA31A48921C7B2221 }}
           package: .
