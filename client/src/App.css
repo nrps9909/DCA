@@ -1,0 +1,717 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    font-family: 標楷體
+;
+}
+/* 樣式設定 */
+
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: auto;
+    overflow-y: hidden;
+    width: 100%;
+    padding: 10px 0;
+    max-width: 1250px;
+    margin-left: 120px;
+    align-items: center;
+    margin-top: 20px;
+}
+.nav-scroller .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    gap: 44.899998473px;
+    padding: 0 10px;
+}
+.nav-item {
+    font-size: 24px;
+    padding: 6px 40px;
+    border: 2px solid white;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.1);
+color: #ffcc00;
+    border-radius: 5px;
+    font-family: 標楷體;
+}
+.nav-item:hover,
+.nav-item:focus {
+    border-color: #ffffff;
+background-color: white;
+    color: black;
+}
+
+.card {
+    border: none;
+}
+.card-header {
+    text-align: left;
+}
+/* 新增的 CSS */
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 800px;
+    overflow-x: auto;
+    display: inline-block;
+}
+.calculator-fieldset {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 24px;
+    height: 700px;
+    margin-left: 32px;
+    margin-bottom: 20px;
+}
+.calculator-fieldset legend {
+    font-size: 18px; /* 與 DCA Settings 字體大小相同 */
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 24px; /* 放大字體大小 */
+}
+.calculator-fieldset label {
+    font-size: 24px; /* 放大字體大小 */
+}
+.calculator-fieldset select,
+.calculator-fieldset input[type="number"] {
+    font-size: 24px; /* 放大字體大小 */
+    font-family: 標楷體
+;
+} 
+.form-group {
+    margin-bottom: 40px; /* 增加间距至 20px */
+    margin-top: 20px;
+}
+.form-group:last-child {
+margin-bottom: 10px; /* 增加最后一个 form-group 的间距至 40px */
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.input-group-text {
+    margin: 0 5px;
+}
+/* 讓所有 label 字體大小相同 */
+label {
+    font-size: 18px; /* 與 DCA Settings 字體大小相同 */
+}
+legend{
+    text-align: center;
+    font-size: 24px;
+}
+.output-container {
+    margin-top: 10px;
+    align-items: left;
+    margin-left:155px;
+    margin-bottom: 20px;
+    width:100%;
+    max-width: 400px;
+}
+.output {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 15px 60px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* 添加过渡效果 */
+    font-family: 標楷體
+;
+}
+.output:hover,
+.output:focus {
+background-color: red; /* 悬停时的背景色 */
+box-shadow: 0 0 10px red; /* 悬停时的阴影 */
+}
+/* 添加点击动画效果 */
+.clicked {
+animation: clickEffect 0.5s;
+}
+@keyframes clickEffect {
+0% {
+background-color: transparent; /* 初始背景色 */
+box-shadow: none; /* 初始阴影 */
+}
+100% {
+background-color: rgba(255, 255, 255, 0.1); /* 最终背景色 */
+box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* 最终阴影 */
+}
+}
+
+.web-idea{
+margin-bottom: 80px;
+font-size: 24px;
+margin-top: 80px; /* 調整線條上方的間距 */
+    margin-bottom: 20px; /* 增加線條下方的間距 */
+    width: 100%;
+    max-width: 1200px;
+    align-items: left;
+    margin-left: 120px;
+}
+.DCA-average{
+margin-bottom: 80px;
+}
+.bitcoinsnow{
+margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.sugar {
+border-radius: 50%;
+width: 200px;
+height: 200px;
+margin-right: 20px; /* 圖片右邊的間距 */
+margin-left: -5px;
+}
+.ainsley{
+border-radius: 50%;
+width: 200px;
+height: 200px;
+margin-right: 20px; /* 圖片右邊的間距 */
+margin-left: -5px;
+
+}
+.introductionsugar{
+display: flex;
+align-items: top;
+margin-top: 50px;
+margin-left: 10px;
+margin-bottom: 20px;
+width: 300px; /* 這裡的寬度可以根據你的需要調整 */
+
+}
+.introductionsugar h1 {
+margin-top: -7px; /* 适当调整这个数值 */
+margin-left: 100px;
+margin-bottom:-10px;
+}
+.introductionainsley{
+display: flex;
+align-items: top;
+margin-top: 50px;
+margin-left: 10px;
+margin-bottom: 20px;
+width: 300px; /* 這裡的寬度可以根據你的需要調整 */
+
+}
+.introductionainsley h1 {
+margin-top: -7px; /* 适当调整这个数值 */
+margin-bottom: -10px;
+margin-left: 100px;
+}
+.text-sugar{
+margin-bottom: 20px;
+display: inline-block
+}
+.introductionsugar h3{
+display: inline-block
+}
+.text-sugar h3 {
+    width: 700px; /* 設定文字寬度 */
+    display: inline-block; /* 讓文字橫向排列 */
+    margin-left: 100px;
+}
+.text-ainsley{
+margin-bottom: 20px;
+display: inline-block
+}
+.introductionainsley h3{
+display: inline-block
+}
+.text-ainsley h3 {
+    width: 700px; /* 設定文字寬度 */
+    display: inline-block; /* 讓文字橫向排列 */
+    margin-left: 100px;
+}
+a{
+color:yellow;
+}
+.founder{
+width:100%;
+max-width: 1200px;
+font-size: 48px;
+color: yellow;
+}
+hr{
+border-top: 1px solid white;
+    margin-top: 80px; /* 調整線條上方的間距 */
+    width: 100%;
+    max-width: 1250px;
+    align-items: left;
+    margin-left: 120px;
+}
+.many-button{
+    margin-top: 80px;
+    margin-bottom: 20px; /* 增加線條下方的間距 */
+    width: 100%;
+    max-width: 1200px;
+    align-items: left;
+    margin-left: 120px;
+}
+.title-web{
+font-size: 48px;
+color: yellow;
+}
+.title-bitcoin-introduction{
+font-size: 48px;
+color: yellow;
+}
+.title-DCA{
+font-size: 48px;
+color: yellow;
+}
+.title-explanation{
+font-size: 48px;
+color: yellow;
+}
+.What-is-DCA-average{
+text-align: left;
+margin-bottom: 40px;
+font-size: 24px;
+}
+.student {
+border-radius: 50%; /* 將圖片的邊角裁剪成圓形 */
+width: 300px; /* 調整圖片的寬度 */
+height: 300px; /* 調整圖片的高度 */
+object-fit: cover; /* 確保圖片能夠填滿圓形的範圍 */
+align-items: left;
+display: inline-block; /* 讓圖片在同一行上 */
+vertical-align: middle; /* 垂直置中對齊 */
+margin-right: 150px;
+}
+.worker {
+border-radius: 50%; /* 將圖片的邊角裁剪成圓形 */
+width: 300px; /* 調整圖片的寬度 */
+height: 300px; /* 調整圖片的高度 */
+object-fit: cover; /* 確保圖片能夠填滿圓形的範圍 */
+align-items: left;
+display: inline-block; /* 讓圖片在同一行上 */
+vertical-align: middle; /* 垂直置中對齊 */
+margin-right: 150px;
+}
+.invenstor{
+border-radius: 50%; /* 將圖片的邊角裁剪成圓形 */
+width: 300px; /* 調整圖片的寬度 */
+height: 300px; /* 調整圖片的高度 */
+object-fit: cover; /* 確保圖片能夠填滿圓形的範圍 */
+align-items: left;
+display: inline-block; /* 讓圖片在同一行上 */
+vertical-align: middle; /* 垂直置中對齊 */
+}
+.text-student{
+text-align: center;
+max-width: 300px;
+width: 100%;
+font-size: 36px;
+display: inline-block;
+}
+.text-worker{
+text-align: center;
+max-width: 300px;
+width: 100%;
+font-size: 36px;
+margin-right: 150px;
+margin-left: 150px;
+display: inline-block;
+}
+.text-invenstor{
+text-align: center;
+max-width: 300px;
+width: 100%;
+font-size: 36px;
+display: inline-block;
+}
+.bitcoin-introduction{
+text-align: left;
+margin-bottom: 40px;
+font-size: 24px;
+}
+
+/*乙太幣*/
+.yitai{
+border-radius: 50%;
+width: 200px;
+height: 200px;
+margin-right: 50px; /* 圖片右邊的間距 */
+}
+.text-container {
+display: flex;
+flex-direction: column;
+margin-left: 50px;
+width: 1000px;
+}
+.text-container h2 {
+margin-top: -5px;
+color:yellow;
+}
+.text-container h3 {
+align-items: center;
+}
+.yitai-container{
+font-family: 標楷體;
+display: flex;
+align-items: top;
+margin-top: 50px;
+margin-left: 10px;
+margin-bottom: 20px;
+width: 1250px; /* 這裡的寬度可以根據你的需要調整 */
+}
+/*萊特幣*/
+.liter{
+border-radius: 50%;
+width: 200px;
+height: 200px;
+margin-right: 50px; /* 圖片右邊的間距 */
+}
+.text-liter-container {
+display: flex;
+flex-direction: column;
+margin-left: 50px;
+width: 1000px;
+}
+.text-liter-container h2 {
+margin-top: -5px;
+color:yellow;
+}
+.text-liter-container h3 {
+align-items: center;
+}
+.liter-container{
+font-family: 標楷體;
+display: flex;
+align-items: top;
+margin-top: 50px;
+margin-left: 10px;
+margin-bottom: 20px;
+width: 1250px; /* 這裡的寬度可以根據你的需要調整 */
+}
+/*瑞波幣*/
+.ray{
+border-radius: 50%;
+width: 200px;
+height: 200px;
+margin-right: 50px; /* 圖片右邊的間距 */
+}
+.text-ray-container {
+display: flex;
+flex-direction: column;
+margin-left: 50px;
+width: 1000px;
+}
+.text-ray-container h2 {
+margin-top: -5px;
+color:yellow;
+}
+.text-ray-container h3 {
+align-items: center;
+}
+.ray-container{
+font-family: 標楷體;
+display: flex;
+align-items: top;
+margin-top: 50px;
+margin-left: 10px;
+margin-bottom: 20px;
+width: 1250px; /* 這裡的寬度可以根據你的需要調整 */
+}
+/*比特幣現金*/
+.cash{
+border-radius: 50%;
+width: 200px;
+height: 200px;
+margin-right: 50px; /* 圖片右邊的間距 */
+}
+.text-cash-container {
+display: flex;
+flex-direction: column;
+margin-left: 50px;
+width: 1000px;
+}
+.text-cash-container h2 {
+margin-top: -5px;
+color:yellow;
+}
+.text-cash-container h3 {
+align-items: center;
+}
+.cash-container{
+font-family: 標楷體;
+display: flex;
+align-items: top;
+margin-top: 50px;
+margin-left: 10px;
+margin-bottom: 20px;
+width: 1250px; /* 這裡的寬度可以根據你的需要調整 */
+}
+/*波卡*/
+.poka{
+border-radius: 50%;
+width: 200px;
+height: 200px;
+margin-right: 50px; /* 圖片右邊的間距 */
+}
+.text-poka-container {
+display: flex;
+flex-direction: column;
+margin-left: 50px;
+width: 1000px;
+}
+.text-poka-container h2 {
+margin-top: -5px;
+color:yellow;
+}
+.text-poka-container h3 {
+align-items: center;
+}
+.poka-container{
+font-family: 標楷體;
+display: flex;
+align-items: top;
+margin-top: 50px;
+margin-left: 10px;
+margin-bottom: 20px;
+width: 1250px; /* 這裡的寬度可以根據你的需要調整 */
+margin-bottom:100px ;
+}
+
+.message{
+text-align: left;
+font-size: 72px;
+color: yellow;
+margin-bottom: 25px;
+margin-left: 120px;
+}
+
+.message-container{
+font-family: 標楷體;
+
+}
+
+.message-container2{
+    font-family: 標楷體;
+    
+    }
+
+.message-container3{
+        font-family: 標楷體;
+        
+        }
+
+.message-container3 fieldset{
+margin-top: 20px;
+border-radius: 3%;
+flex-direction: column;
+margin-left: -50px;
+width: 100%;
+max-width: 400px;
+max-height: 700px;
+margin-bottom: 20px;
+border-color: black;
+margin-left: 250px;
+}
+
+
+.blockchain{
+border-radius: 50%;
+height: 100px;
+width: 100px;
+}
+
+.block-blockchain{
+font-family: 標楷體;
+display: flex;
+align-items: top;
+margin-top: 80px;
+margin-left: 10px;
+margin-bottom: 20px;
+}
+
+.block-blockchain h1{
+text-align:center ;
+margin-left: 60px;
+}
+
+fieldset h2{
+color:yellow;
+text-align: center;
+font-size: 48px;
+}
+
+.news{
+border-radius: 50%;
+height: 100px;
+width: 100px;
+}
+
+.news-news{
+font-family: 標楷體;
+display: flex;
+align-items: top;
+margin-top: 50px;
+margin-left: 10px;
+margin-bottom: 20px;
+}
+
+.news-news h1{
+text-align:center ;
+margin-left: 70px;
+}
+
+.invenst{
+border-radius: 50%;
+height: 100px;
+width: 100px;
+}
+
+.invenst-invenst{
+font-family: 標楷體;
+display: flex;
+align-items: top;
+margin-top: 50px;
+margin-left: 10px;
+margin-bottom: 20px;
+}
+
+.invenst-invenst h1{
+text-align:center ;
+margin-left: 70px;
+}
+
+a h1{
+color:white
+}
+
+/* 去掉链接的下划线 */
+a {
+text-decoration: none;
+}
+
+/* 悬停在链接上时显示虚线 */
+a h1:hover {
+text-decoration: underline;
+color: white;
+}
+
+h3 a:hover{
+text-decoration: underline;
+color: yellow;
+}
+
+.text-bitcoin-introduction{
+    margin-bottom: 80px;
+    font-size: 24px;
+    margin-top: 80px; /* 調整線條上方的間距 */
+        margin-bottom: 20px; /* 增加線條下方的間距 */
+        width: 100%;
+        max-width: 1200px;
+        align-items: left;
+        margin-left: 120px;
+}
+
+.text-DCA-introduction{
+    margin-bottom: 80px;
+    font-size: 24px;
+    margin-top: 80px; /* 調整線條上方的間距 */
+        margin-bottom: 20px; /* 增加線條下方的間距 */
+        width: 100%;
+        max-width: 1200px;
+        align-items: left;
+        margin-left: 120px;
+}
+
+.form-group input{
+    margin-top: 20px;
+}
+
+.chart-container {
+    margin-top: 0px;
+    width: 800px;
+    height: 120%;
+    max-height: 800px;
+    display:inline-block;
+    align-items: center;
+  }
+  
+.app-container {
+    display: inline-flex;
+    justify-content: space-around; /* 平均分配子元素间的空间 */
+    align-items: center; /* 顶部对齐子元素 */
+}
+.chart-section {
+    flex: 2; /* 調整圖表欄的大小 */
+    margin: left 200px;
+  }
+
+.comment-section{
+    font-family: 標楷體;
+}
+
+.comment-section fieldset {
+    margin-top: 20px;
+    border-radius: 3%;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 100%;
+    max-width: 400px;
+    max-height: 600px;
+    margin-bottom: 20px;
+    border-color: white;
+    align-items: flex-start;
+    margin-left: 120px;
+    overflow-y: auto; /* 或者使用 overflow: scroll; */
+    color: yellow;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-section,
+.message-container3 {
+    border-radius: 3%;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.comment-section {
+    margin-right: 20px; /* 調整間距以對齊 */
+}
+
+.comment-section h1{
+    margin-left: 120px;
+}
+.message-container3 {
+    margin-left: 20px; /* 調整間距以對齊 */
+}
+
+.message-text {
+    word-wrap: break-word; /* 確保單詞可以斷行以避免超出容器 */
+    overflow-wrap: break-word; /* 確保長單詞能夠在必要時斷行 */
+}
+
+form {
+    margin-left: 120px; /* 或者使用 padding: 0 0 0 20px; */
+    font-size: 24px;
+  }
+
