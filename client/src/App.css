@@ -71,10 +71,12 @@ background-color: white;
     border-radius: 8px;
     padding: 20px;
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     font-size: 24px;
-    height: 700px;
+    height: 400px;
     margin-left: 32px;
+    margin-right: 50px;
+    overflow-y: auto;
     margin-bottom: 20px;
 }
 .calculator-fieldset legend {
